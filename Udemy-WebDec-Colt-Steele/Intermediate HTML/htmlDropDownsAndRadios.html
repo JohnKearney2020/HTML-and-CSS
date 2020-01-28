@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Drop Downs / Radios</title>
+</head>
+<body>
+
+
+    <p>Do you prefer cats or dogs?</p>
+    <form action="">
+        <label for="dogs">Dogs:</label>
+        <input name="petChoice" id="dogs" type="radio" value="DOGS"> <!--radio buttons are typically used when the user only has one choice-->
+        <label for="cats">Cats:</label>
+        <input name="petChoice" id="cats" type="radio" value="CATS"> 
+        <!-- by giving them the same name, the radio option can only be chosen for one of them -->
+        <!-- the value property is important and assigns a value to whichever radio button they choose -->
+        <!--the checkbox is used when users have multiple choices-->
+        
+        <!-- the SELECT tag - gives us dropdown menus -->
+        <label for="dropDown">Choose your set:</label>
+        <select name="color" id="dropDown">
+            <option>red</option> <!--each value in our drop down needs the option tag.-->
+            <option value="orange">orange</option> <!--the value will be shown in the address bar when we click submit. For red, it defaults to "red" as the value-->
+            <option value="yellow">yellow</option>
+        </select>
+
+        <!-- Text Area -->
+        <!-- text area allows input for large amounts of text, like a resume -->
+        <label for="textbox">Resume:</label>
+        <textarea name="resume" id="textbox" cols="50" rows="10" placeholder="paste your resume here"></textarea>
+
+        <button>Go!</button> <!--if the button is the last thing in a form, it will submit the form-->
+    </form>
+</body>
+</html>

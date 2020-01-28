@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <!-- <h1>Sign In</h1>
+    <form action="/sign-in-url" method="post">
+        <input type="text">
+        <input type="password">
+        <button>Login</button>  
+    </form> -->
+
+<!-- forms have two attributes:
+    action - where the form sends data to
+    if we don't specify an action, it goes to where we are, i.e. it'll just refresh the page
+    method - what HTTP method (get/post)
+    If we don't specify a method it defaults to a get request -->
+
+    <!-- <form action="http://wikipedia.org" method="GET"> -->
+    <form action="http://www.wikipedia.org">
+        <!-- the placeholder option adds light grey placeholder text in the inputs -->
+        <label>
+            Username:
+            <input name="username" type="text" placeholder="username" required> <!--This makes the username a required field-->
+        </label>
+        <!-- <input type="color">
+        <input type="radio"> -->
+        <!-- OR -->
+        <!-- <label for="password">Password:</label>
+        <input name="password" type="password" placeholder="password" required> This makes the password a required field -->
+        
+        <label for="email">Email:</label>
+        <input name="email" type="email" placeholder="email address" required> <!--This makes the password a required field-->
+        <!-- the email type will require a properly formatted email like john@gmail.com-->
+        <!-- <button>Submit</button> -->
+        <input type="submit">
+    </form>
+</body>
+</html>
