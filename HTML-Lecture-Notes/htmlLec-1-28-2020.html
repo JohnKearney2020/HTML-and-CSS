@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Lec 1-28-2020</title>
+
+    <link rel="stylesheet" href="../HTML-Lecture-Notes/styles/global.css">
+    <!-- the ../ brings up intellisense to find the location of your .css file -->
+    <!-- style sheets should be linked to in the header -->
+    <style>
+        /* p>a {
+            color:red;
+            font-weight: bold;
+            font-size: 30px;
+            
+        } */
+        p {
+            color: white;
+            background-color: blue;
+            font-weight: 30px;
+            
+        }
+        a {
+            text-decoration: underline;
+            color:green
+
+        }
+
+        /* a:visited {
+            color: orange
+        } */
+        /* all custom class rules start with a dot . */
+        /* class rules can be used over and over again */
+        .light{
+            background-color: white;
+            height: 50px;
+            font-size: 20px;
+            color: black;
+        }
+
+        /* id's are prefaced by # */
+        /* id's should be unique and only used once. THey can be reused without issue in HTML, but those same ID's will throw errors in Javescripts */
+        #diego{
+            color:blueviolet;
+
+        }
+    </style>
+</head>
+    
+<body>
+    <p>Blue Paragraph</p>
+    <p>Blue Paragraph</p>
+    <p>Blue Paragraph</p>
+
+
+
+    <img src="https://parade.com/wp-content/uploads/2018/03/golden-puppy-life-national-geographic-ftr.jpg" alt="puppy in a field of flowers" width="50%">
+    <!-- the alt tag is a description used for accessibility and search engine optimization -->
+    <!--the width and height units default to pixels-->
+    <!-- the % unit for width and height adjusts automattically to show a % of view -->
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed laborum cumque, beatae officia quod, veniam laudantium nulla ut dolores eum numquam, consequuntur placeat modi odit vitae consectetur? Iure, ducimus sed!
+        <br> <!--break is like a carriage return-->
+        break here
+        <hr>
+        <!--hr gives a horizontal line that adjust dynamically to the user's viewport-->
+
+        <a href="https://www.google.com" target="_blank">Google Link</a> <!--target lets us use _blank to open up a new tab instead of linking directly to the site in the same window-->
+    </p>
+    
+    <p class="light">light paragraph</pclass="light">
+
+    <div id="diego">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A ut quo asperiores ea temporibus iste, fugit soluta eveniet non? In ipsum, reprehenderit modi excepturi unde soluta doloremque minima architecto quaerat.
+    </div>
+
+    <div id="diego">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi commodi eveniet ab aliquam maxime, nemo error cum in id dicta, deserunt similique repudiandae consectetur tenetur architecto! Officia nobis tempora id?
+    </div>
+    <p class="light">
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+    </p>
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ol>
+    
+</body>
+</html>
