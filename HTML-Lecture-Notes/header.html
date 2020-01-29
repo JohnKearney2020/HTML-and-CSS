@@ -11,6 +11,7 @@
         .header{
             height: 400px;
             background-color: yellow;
+            
         }
         body {
 
@@ -18,9 +19,10 @@
         .imgContainer {
             height: 400px;
             overflow: hidden;
-            position: absolute;
+            position: fixed;
             top: 0px;
             z-index: 10;
+            
         }
         .cityImage {
             /* position: absolute;
@@ -33,7 +35,7 @@
             position: absolute;
             top: 0px;
             z-index: 20;
-            opacity: 70%;
+            opacity: 40%;
         }
         .textContainer {
             /* we need position in order to use z-index */
@@ -41,12 +43,60 @@
             top: 0px;
             z-index: 30;
             width: 100%;
-            height: 400px;
+            /* height: 400px; */
+            line-height: 400px;
+            color: white;
+            font-size: 50px;
+            text-align: center;
+        }
+        .lightBlue {
+            background-color: lightblue;
+            width: 100%;
+            height: 350px;
+        }
+        .whiteContainer {
+            background-color: white;
+            width: 100%;
+            height: 350px;
+        }
+        .navBar{
+             /* Full-height: remove this if you want "auto" height */
+            width: 100%; /* Set the width of the sidebar */
+            position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+            z-index: 40; /* Stay on top */
+            top: 0; /* Stay at the top */
+            /* left: 0; */
+            /* background-color: #111; Black */
+            overflow-x: hidden; /* Disable horizontal scroll */
+            text-align: right;
+            font-size: 30px;
+
+        }
+        .wrapper {
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+        .wrapper a {
+            text-decoration: none;
+        }
+        .wrapper a:hover {
+            /* text-decoration: underline; */
+            background-color: blue;
             color: white;
         }
+
     </style>
 </head>
 <body>
+    <div class="wrapper">
+        <div class="navBar">
+            <a href="#">About me</a>
+            <a href="#">Houston Fun</a>
+            <a href="#">Restaraunts</a>
+            <a href="#">Parks</a>
+        </div>
+    </div>
+
     <div class="header">
         <div class="imgContainer">
             <img class="cityImage" width = 100% src="https://www.outfrontmedia.com/-/media/images/ofm/markets/houston/houston-hero.ashx" alt="">
@@ -59,6 +109,19 @@
         </div>
 
     </div>
-    
+    <!-- End of Header -->
+
+    <div class="whiteContainer">
+
+    </div>
+    <div class="lightBlue">
+        
+    </div>
+    <div class="whiteContainer">
+        
+    </div>
+    <div class="lightBlue">
+        
+    </div>
 </body>
 </html>
