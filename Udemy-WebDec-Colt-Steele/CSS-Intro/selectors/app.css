@@ -1,0 +1,18 @@
+body {
+	background: orange;
+}
+
+li {
+	border: 2px solid red;
+}
+
+/* here we reference a specific element */
+/* special is the id of a li item, and will turn just that one yellow */
+#special {
+	background-color: yellow;
+}
+
+/* classes work similary to ID's, but they can be used on any number of elements on a page */
+.completed {
+	text-decoration: line-through;
+}
