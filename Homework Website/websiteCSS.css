@@ -1,0 +1,15 @@
+#homePage {
+	background: url(https://images.unsplash.com/photo-1504280645497-00afe6a47e43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+	font-size: 30px;
+	color: white;
+}
+
+/* main h1 for the site */
+#mainGreeting {
+	color: rgb(255, 255, 255);
+	/* border: 3px solid red; */
+}
+
+#petBackground {
+	background-color: lightskyblue;
+}
