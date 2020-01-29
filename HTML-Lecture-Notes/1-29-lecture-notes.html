@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .hello{
+            background-color: yellow; 
+            font-size: 90px; 
+            width:185px;
+        }
+
+        .box{
+            background-color: yellow;
+            padding: 50px;
+            border: 20px solid black;
+            margin: 100px;
+            height: 240px;
+            width: 240px;
+            /*border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, and the content box will shrink to absorb that extra width. This typically makes it much easier to size elements.*/
+            box-sizing: border-box;
+        }
+        div{
+            background-color: cyan;
+            border: 2px solid black;
+            /* padding: 10px;
+            margin: 20px; */
+            /* we CAN change the width and height of block level elements */
+            /* width: 300px;
+            height: 300px; */
+        }
+        span{
+            background-color: yellow;
+            border: 2px solid black;
+            /* padding: 10px;
+            margin: 20px; */
+            /* we CANNOT change the width and height of in-line elements. The width and height below will have no effect. */
+            /* width: 300px;
+            height: 300px; */
+            /* however, we can change how elements behave by using the display style. We can make an in-line element behave like a block element, and vice versa */
+            /* now the width and height above will have an effect */
+            /* display: block; */
+
+        }
+        a{
+            background-color: orange;
+            border: 2px solid orange;
+            /* padding: 10px;
+            margin: 20px; */
+            /* we CANNOT change the width and height of in-line elements. The width and height below will have no effect. */ 
+            /* width: 300px;
+            height: 300px; */
+            /* however, we can change how elements behave by using the display style. We can make an in-line element behave like a block element, and vice versa */
+            /* now the width and height above will have an effect */
+            /* display: block; */
+        }
+
+        /* In-line block items are in-line, but can have a height and width. Images are like this by default. We can use display to make an item behave like this, too */
+        .inline-block-element{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: lightpink;
+            vertical-align: top;
+            margin: 0
+        }
+
+    </style>
+</head>
+<body>
+    <div>Hello, I am a div.</div> <!--divs are BLOCK level elements-->
+        <span>Hello, I am a span. <!--spans are in-line elements-->
+            <i>Hello</i>
+        </span>some more text <!--this will appear on the same line as Hello and 'some more text'-->
+    <a href="#">Hello, I am an anchor.</a>
+    <div class="hello">
+        hello
+    </div>
+
+    <div class="box">The contents</div>
+
+    <div class="inline-block-element">
+        <span>Hello, I am a span.
+            <i>Hello</i>
+        </span>some more text
+        <a href="#">Hello, I am an anchor.</a>
+    </div>
+    <img height="150px" src="https://cdn3-www.dogtime.com/assets/uploads/2018/10/puppies-cover.jpg" alt="">
+</body>
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1/29 Lecture</title>
+    <style>
+        p {
+            background-color: pink;
+            padding-top: 50px;
+            border: solid brown 4px;
+            margin: 0px 40px 80px 20px; 
+        }
+
+        .hello {
+            background-color: yellow;
+            font-size: 90px;
+            width: 50%;
+            padding: 30px;
+            /* border: blueviolet dotted 6px; */
+            border-width-top: 6px;
+            border-top-style: dashed;
+            border-top-color: red;
+        }
+
+        .box{
+            background-color: yellow;
+            border: 20px solid black;
+            padding: 50px;
+            margin: 100px;
+            height: 240px;
+            width: 240px;
+            overflow: auto;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="hello">
+        Hello
+    </div>
+    <p>ipsum, dolor sit amet consectetur adipisicing elit. Fuga eum temporibus quidem quibusdam officia earum qui tenetur dolor adipisci totam hic, laboriosam laudantium in, minus laborum numquam sunt eligendi maxime?</p> 
+
+    <p>ipsum, dolor sit amet consectetur adipisicing elit. Fuga eum temporibus quidem quibusdam officia earum qui tenetur dolor adipisci totam hic, laboriosam laudantium in, minus laborum numquam sunt eligendi maxime?</p> 
+
+    <div class="box">
+        my box
+        <img src="https://icatcare.org/app/uploads/2019/09/The-Kitten-Checklist-1.png" alt="">
+    </div>
+</body>
+</html> -->

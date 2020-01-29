@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Postioning</title>
+    <style>
+        .pinkCont {
+            height: 100px;
+            background-color: pink;
+        }
+        .purpleCont {
+            height: 100px;
+            /* relative  positioning moves things in reference to the clostest hierarchal element*/
+            /* position: relative; */
+            /* absolute moves things in reference to their parent container */
+            position: absolute;
+            left: 40px;
+            /* top: -50px; */
+            background-color: purple;
+        }
+
+        .imgContainer{
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            border-radius: 50%;
+            position:absolute;
+            left: 50%;
+            top: 120px;
+        }
+        .myImage{
+            position:absolute;
+            top: -150px;
+            left: -350px;
+        }
+        .nav{
+            width: 100%;
+            text-align: center;
+            background-color: green;
+            position: fixed;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">test</a>
+        <a href="#">calendar</a>
+    </div>
+    <div class="pinkCont">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, blanditiis. Eius temporibus molestiae hic obcaecati officia qui esse labore aliquam? Impedit laboriosam consectetur molestiae omnis illo nulla ratione excepturi quis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, blanditiis. Eius temporibus molestiae hic obcaecati officia qui esse labore aliquam? Impedit laboriosam consectetur molestiae omnis illo nulla ratione excepturi quis!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, blanditiis. Eius temporibus molestiae hic obcaecati officia qui esse labore aliquam? Impedit laboriosam consectetur molestiae omnis illo nulla ratione excepturi quis!
+    </div>
+    <!-- <div class="purpleCont">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit accusantium sapiente, laudantium sequi tempora provident cum adipisci eveniet maxime, repellendus voluptas. Consequuntur eum officiis odio placeat corrupti quia ratione?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe suscipit accusantium sapiente, laudantium sequi tempora provident cum adipisci eveniet maxime, repellendus voluptas. Consequuntur eum officiis odio placeat corrupti quia ratione?
+    </div> -->
+    <div class="imgContainer">
+        <img  class="myImage" src="https://timesofindia.indiatimes.com/thumb/msid-68523832,width-800,height-600,resizemode-4/68523832.jpg" alt="">
+    </div>
+    <div class="pinkCont">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, asperiores ab reiciendis a provident modi, officia necessitatibus ut tenetur vitae, consectetur doloribus eveniet laudantium veniam tempora odio placeat repellendus quod.
+
+    </div>
+
+</body>
+</html>

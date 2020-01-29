@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Display Properties</title>
+    
+    <style>
+        div{
+            background-color: cyan;/*divs span the entire page*/
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+        }
+        span{
+            background-color: yellow;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;
+            /* setting height and width does NOT work for in-line elements */
+            width: 200px;
+            height: 200px;
+            /* display: block; */
+            display: inline-block;
+        }
+        img {
+            display: block;
+            /* img must be a block to center */
+            margin: auto;
+        }
+        a{
+            background-color: orange;
+            border: 2px solid orange;
+            padding: 10px;
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+        }
+        h1{
+            background-color: yellow;
+            /* display: inline; */
+            text-align: center;
+        }
+        h2 {
+            background-color: orange;
+            /* display: inline; */
+            text-align: center;
+        }
+        #content{
+            width: 500px;
+            background-color: green;
+            padding: 20px;
+            margin-left: auto; /*this will center it */
+            margin-right: auto;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Hello world</h1>
+    <h2>This is another elements</h2>
+    <img src="https://www.petmd.com/sites/default/files/small-kitten-walking-towards_127900829_0.jpg" width=200px alt="">
+    <img src="https://www.petmd.com/sites/default/files/small-kitten-walking-towards_127900829_0.jpg" width=200px alt="">
+    <div>Hello, I am a div.</div>
+    <span>Hello, I am a span.
+        <i>Hello</i>
+        I am a number
+    </span>some more text 
+    <a href="#">Hello, I am an anchor.</a><!--the # sign is a placeholder-->
+
+    <div id="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas nihil sit aperiam assumenda labore tenetur accusamus cumque. Obcaecati aliquid ea temporibus ad, porro enim in odit eos odio possimus laboriosam.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, numquam dolorum error, dolores est sequi porro aspernatur laboriosam quo dolor ipsum quaerat labore. Omnis, nemo animi asperiores eos corporis modi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga necessitatibus enim possimus itaque ex rerum. Accusamus expedita, velit in dolorum iusto temporibus nulla, reiciendis ad, optio consequuntur voluptas cupiditate quas.
+    </div>
+</body>
+</html>
