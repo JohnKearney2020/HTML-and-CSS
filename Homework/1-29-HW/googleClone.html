@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gpogle Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <style>
+        #googleBackground {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+        .search{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+            padding: 12px;
+            border-radius: 25px;
+            border: lightsteelblue solid 2px;
+            background-image: url(https://i.imgur.com/qGaqWct.png);
+            background-repeat: no-repeat;
+            background-position: left;            
+        }
+        #buttonHolder {
+            /* margin-left: auto;
+            margin-right: auto; */
+            text-align: center;
+            border-color: lightgray;
+            padding: 30px;
+        }
+        .button {
+            padding: 10px;
+            border: none;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img id="googleBackground" src="https://dc-class.herokuapp.com/static/fullstack/projects/google/google_main_img.png" alt="">
+    
+    <form action="">
+        <input class="search" type="text" autofocus>
+        <div id="buttonHolder">
+            <button class="button">Google Search</button>
+            <button class="button">I'm Feeling Lucky</button>
+        </div>
+    </form>
+</body>
+</html>
