@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox Intro</title>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            /* justify-content: flex-start; */
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 1500px;
+            background-color: turquoise;
+        }
+        .items {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            /* width: 150px;  */
+            height: 150px;
+            background:tomato;
+            margin: 10px;
+            font-size: 30px;
+            color: white;
+            flex-grow: 1;
+        }
+        /* .subitem {
+
+        } */
+
+        .order1 {
+            order:2;
+        }
+        .order2{
+            order:1;
+        }
+        .item1 {
+            flex-grow: 1;
+        }
+        .item3 {
+            flex-grow: 2;
+        }
+        .item3 {
+            flex-grow: 3;
+        }
+        .something{
+            align-self: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">
+            1<!-- <div class="subitem">1</div> -->
+        </div>
+        <div class="items item2 something">2</div>
+        <div class="items item3">3</div>
+        <div class="items">4</div>
+        <div class="items order2">5</div>
+    </div>
+</body>
+</html>
