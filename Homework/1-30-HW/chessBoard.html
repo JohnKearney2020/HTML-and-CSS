@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chessboard</title>
+    <style>
+    .board {
+        height: 100vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .whiteFirstRow {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        height: 12.5%;
+        width: 100%
+    }
+    .blackFirstRow {
+        display: flex;
+        flex-direction: row;
+        /* justify-content: center; */
+        height: 12.5%;
+        width: 100%;
+    }
+
+    .white {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border: black solid 2px;
+        /* the individual black and white blocks are 12.5%, or 1/8 of the width of their parent rows */
+        width: 12.5%;
+        /* the individual black and white blocks are 100% of the height of their parent rows */
+        height:100%
+    }
+    .black {
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width: 12.5%;
+        height: 100%;
+        border: black solid 2px;
+    }
+    .img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    </style>
+</head>
+<body>
+    <div class="board">
+        <!-- first row -->
+        <div class="whiteFirstRow">
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chess_nlt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Chess_blt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Chess_qlt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Chess_klt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Chess_blt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chess_nlt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- second row -->
+        <div class="blackFirstRow">
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>   
+        </div>
+        <!-- third row -->
+        <div class="whiteFirstRow">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <!-- fourth row -->
+        <div class="blackFirstRow">
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>   
+        </div>
+        <!-- fifth row -->
+        <div class="whiteFirstRow">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+        <!-- sixth row -->
+        <div class="blackFirstRow">
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>   
+        </div>
+        <!-- seventh row -->
+        <div class="whiteFirstRow">
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- eigth row -->
+        <div class="blackFirstRow">
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chess_nlt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Chess_blt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Chess_qlt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Chess_klt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Chess_blt60.png" alt="">
+                </div>
+            </div>
+            <div class="black">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chess_nlt60.png" alt="">
+                </div>
+            </div>
+            <div class="white">
+                <div class="img">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="">
+                </div>
+            </div>   
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navbar</title>
+    <style>
+        .parent {
+            display: flex;
+            background-color: skyblue;
+            justify-content: space-around;
+            padding: 15px;
+            color: white;
+            font-size: 1.5em;
+
+        }
+        .parent a{
+            color: white;
+            text-decoration: none;
+        }
+        .parent a:hover{
+            text-decoration: underline;
+        }
+        .comp {
+            flex-grow: 4;
+        }
+        .list {
+            flex-grow: 1;
+
+        }
+        #child1 {
+            display: flex;
+
+        }
+        #child2 {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <!-- Company name is a child of child1, and a grandchild of parent -->
+        <!-- children will inherit the settings of the parent, grandchildren do not inheret the setting of their grandparents -->
+        <div id="child1" class="comp">
+            Company Name
+        </div>
+        <div id="child2" class="list">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Contacts</a>
+        </div>
+    </div>
+</body>
+</html>

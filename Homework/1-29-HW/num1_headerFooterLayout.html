@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Header Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <style>
+        .main {
+        
+        }
+        .sidenav {
+
+        }
+        #header {
+            position: absolute;
+            height: 15%;
+            width: 100%;
+            background-color: lightseagreen;
+        }
+        #footer {
+            position: absolute;
+            top: 90%;
+            left: 0;
+            height: 10%;
+            width: 100%;
+            background-color: lightseagreen;
+        }
+        .nav {
+            position: absolute;
+            top: 15%;
+            left: 0;
+            width: 25%;
+            bottom: 10%;
+            background-color: lightskyblue;
+        }
+        .nav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 25px;
+            color: darkslategrey;
+            display: block;
+        }
+        /* When you mouse over the navigation links, change their color */
+        .nav a:hover {
+            color: #f1f1f1;
+        }
+        #content {
+            position: absolute;
+            top: 15%;
+            left: 25%;
+            width: 75%;
+            bottom: 10%;
+            background-color: rgb(175, 135, 250);
+        }
+
+    </style>
+</head>
+<body class="main">
+    <div id="header"></div>
+    <div id="footer"></div>
+    <div class="nav">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="content">
+
+    </div>
+
+</body>
+</html>

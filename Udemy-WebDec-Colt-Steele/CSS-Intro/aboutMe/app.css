@@ -1,0 +1,38 @@
+/* BACKGROUNDS AND BORDERS  */
+h4 {
+	background: rgb(255, 100, 80);
+}
+
+body {
+	background: pink;
+
+	/* create a background image */
+	/* background: url(https://images-na.ssl-images-amazon.com/images/I/91WdmdW3uOL._AC_SL1500_.jpg); */
+
+	/* ensure the background image does not tile if necessary */
+	/* background-repeat: no-repeat; */
+
+	/* ensure background stretchs to fill the entire body */
+	/* background-size: cover; */
+}
+
+/*       COLORS            */
+h1 {
+	/* Hexadecimal input */
+	/* color: #963db9;  */
+	/*RGB input */
+	/* color: rgb(0, 255, 0); */
+	/* RGBa input, the last value, called alpha, controls transparency */
+	color: rgba(11, 99, 150, 1);
+
+	/* A border must have a color, border, and a style or it won't be visible */
+	/* border-color: purple; */
+	/* A border MUST have a width or it will not be visible */
+	/* border-width: 5px; */
+	/* Lastly, we MUST have a border style */
+	/* border-style: solid; */
+
+	/* Eqivalent syntax */
+	border: 5px solid purple;
+	border: 8px dashed rgba(11, 99, 150, 1);
+}

@@ -1,0 +1,47 @@
+/* Advanced CSS Selectors */
+
+/* the Star selector - selects everything on the page*/
+* {
+	border: 1px solid lightgrey;
+}
+
+/* Descendent Selector */
+/* will select all of the specified element that is a descendent of the first element */
+/* itc, all anchor tags that are a descendent of an li, in other words everything that is*/
+/* an anchor tag inside of an li */
+li a {
+	color: red;
+}
+
+/* Adjacent Selector */
+/* select the element that comes after the first listed element */
+/* itc, all lists that come after an h4 */
+h4 + ul {
+	border: 4px solid red;
+}
+
+/* Attribute Selector */
+/* you can select all the attributes that match what you specify */
+/* itc, all the links to google */
+a[href="http://www.google.com"] {
+	background: blue;
+}
+
+/* you'll commonly use the attribute selector on inputs */
+input[type="checkbox"] {
+	background: blue;
+}
+
+/* Nth of type */
+/* takes a number, like 3, and selects every nth of an element, every 3rd itc */
+/* it only selects the nth in each group, so if you chose every 3rd li, */
+/* it would only change the 3rd li item even if the list had 12 */
+
+ul:nth-of-type(3) {
+	background: purple;
+}
+
+/* this will give alternating list elements a purple background */
+/* li:nth-of-type(even) {
+	background: purple;
+} */
