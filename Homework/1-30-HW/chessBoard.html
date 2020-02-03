@@ -15,14 +15,13 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .whiteFirstRow {
+    /* .whiteFirstRow {
         display: flex;
         flex-direction: row;
-        /* justify-content: center; */
         height: 12.5%;
         width: 100%
-    }
-    .blackFirstRow {
+    }  */
+    .Row {
         display: flex;
         flex-direction: row;
         /* justify-content: center; */
@@ -34,11 +33,11 @@
         display: flex;
         flex-direction: column;
         background-color: white;
-        border: black solid 2px;
         /* the individual black and white blocks are 12.5%, or 1/8 of the width of their parent rows */
         width: 12.5%;
         /* the individual black and white blocks are 100% of the height of their parent rows */
-        height:100%
+        height:100%;
+        border: black solid 2px;
     }
     .black {
         display: flex;
@@ -60,7 +59,7 @@
 <body>
     <div class="board">
         <!-- first row -->
-        <div class="whiteFirstRow">
+        <div class="Row">
             <div class="white">
                 <div class="img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="">
@@ -104,7 +103,7 @@
         </div>
 
         <!-- second row -->
-        <div class="blackFirstRow">
+        <div class="Row">
             <div class="black">
                 <div class="img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
@@ -147,7 +146,7 @@
             </div>   
         </div>
         <!-- third row -->
-        <div class="whiteFirstRow">
+        <div class="Row">
             <div class="white"></div>
             <div class="black"></div>
             <div class="white"></div>
@@ -158,7 +157,7 @@
             <div class="black"></div>
         </div>
         <!-- fourth row -->
-        <div class="blackFirstRow">
+        <div class="Row">
             <div class="black"></div>
             <div class="white"></div>
             <div class="black"></div>
@@ -169,7 +168,7 @@
             <div class="white"></div>   
         </div>
         <!-- fifth row -->
-        <div class="whiteFirstRow">
+        <div class="Row">
             <div class="white"></div>
             <div class="black"></div>
             <div class="white"></div>
@@ -180,7 +179,7 @@
             <div class="black"></div>
         </div>
         <!-- sixth row -->
-        <div class="blackFirstRow">
+        <div class="Row">
             <div class="black"></div>
             <div class="white"></div>
             <div class="black"></div>
@@ -191,7 +190,7 @@
             <div class="white"></div>   
         </div>
         <!-- seventh row -->
-        <div class="whiteFirstRow">
+        <div class="Row">
             <div class="white">
                 <div class="img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="">
@@ -234,7 +233,7 @@
             </div>
         </div>
         <!-- eigth row -->
-        <div class="blackFirstRow">
+        <div class="Row">
             <div class="black">
                 <div class="img">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="">
