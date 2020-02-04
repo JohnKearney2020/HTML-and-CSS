@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Friendship Application Form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+    <form>
+        <!-- First and Last Name -->
+        <div class="form-group d-flex justify-content-start align-items-center">
+            <label for="firstNameInput">Your First Name:</label>
+            <input type="email" class="form-control col-4 m-2" id="firstNameInput" placeholder="Geralt">
+            <label for="lastNameInput">Your Last Name:</label>
+            <input type="email" class="form-control col-4 m-2" id="lastNameInput" placeholder="of Rivia">
+        </div>
+
+        <!-- Email Address -->
+        <div class="form-group">
+            <label for="emailInput">Your Email address</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+        </div>
+
+        <!-- Gender Selection -->
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="maleSelector" value="male" checked>
+            <label class="form-check-label" for="exampleRadios1">
+                Male
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="femaleSelector" value="female">
+            <label class="form-check-label" for="exampleRadios2">
+                Female
+            </label>
+        </div>
+        <div class="form-check mb-2">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="otherSelector" value="other">
+            <label class="form-check-label" for="exampleRadios2">
+                Other
+            </label>
+        </div>
+
+
+        <div class="form-group">
+            <label for="tvShowSelector">What's Your Favorite TV Show?</label>
+            <select class="form-control" id="tvShowSelector">
+                <option>Game of Thrones</option>
+                <option>The Witcher</option>
+                <option>Keeping up with the Kardashians</option>
+                <option>The New Adventures of Sabrina</option>
+                <option>Supernatural</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="ageRangeSelector">How old are you?</label>
+            <select multiple class="form-control" id="ageRangeSelector">
+                <option>18-23</option>
+                <option>24-29</option>
+                <option>30-34</option>
+                <option>35-39</option>
+                <option>40+</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="salesPitch">Explain why you want to be my friend:</label>
+            <textarea class="form-control" id="salesPitch" rows="3"></textarea>
+        </div>
+
+        <!-- checkbox -->
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="termsAgree" id="terms">
+            <label class="form-check-label" for="defaultCheck1">
+                I Agree to the Terms and Conditions of Beings John's Friend
+            </label>
+        </div>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
