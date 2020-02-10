@@ -8,10 +8,26 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Pattern Project</title>
+    <title>Flexbox</title>
 </head>
 <body>
-    
+    <h1 class="text-center display-4">Flexbox</h1>
+
+    <div class="border border-dark d-flex justify-content-start align-items-end" style="height: 200px">
+        <button class="btn btn-info btn-lg">LARGE</button>
+        <button class="btn btn-warning">SMALL</button>
+        <button class="btn btn-danger">SMALL</button>
+    </div>
+    <div class="border border-dark d-flex justify-content-start align-items-end flex-row-reverse" style="height: 200px">
+        <button class="btn btn-info btn-lg">LARGE</button>
+        <button class="btn btn-warning">SMALL</button>
+        <button class="btn btn-danger">SMALL</button>
+    </div>
+    <div class="border border-dark d-flex align-items-end justify-content-start flex-column" style="height: 200px">
+        <button class="btn btn-info btn-lg">LARGE</button>
+        <button class="btn btn-warning">SMALL</button>
+        <button class="btn btn-danger">SMALL</button>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
