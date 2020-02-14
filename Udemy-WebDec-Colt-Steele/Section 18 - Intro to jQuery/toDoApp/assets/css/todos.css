@@ -1,3 +1,10 @@
-body {
-	background: purple;
+#container {
+	border: 2px solid gray;
+	width: 360px;
+	margin: 0 auto; /* top and bottom are 0, left and right are auto */
+}
+
+.completed {
+	color: gray;
+	text-decoration: line-through;
 }
