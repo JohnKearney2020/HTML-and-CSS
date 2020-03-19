@@ -24,7 +24,7 @@ $('ul').on('click', 'span', function(event) {
 });
 
 // ------------------------------------------------------------------------------------------------
-//                            //Check off specific to-dos by clicking
+//                            Check off specific to-dos by clicking them
 // ------------------------------------------------------------------------------------------------
 $('ul').on('click', 'li', function() {
 	//we add the on click to the parent ul b/c javascript only allows us to add listeners to items that already exist the first time this code is run
